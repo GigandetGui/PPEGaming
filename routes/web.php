@@ -27,6 +27,7 @@ Route::resource('type', 'TypeController');
 Route::resource('jeu', 'JeuController');
 Route::resource('actualite', 'ActualiteController');
 Route::resource('user', 'UtilisateurController');
+Route::resource('recherche', 'RechercheController');
 Route::resource('messagerie','MessagerieController');
 
 Auth::routes();

@@ -35,6 +35,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              <li><a href="#">Recherche</a></li>
              <li><a href="#">Forum</a></li>
              <li class="{{ Request::is('/') ? 'active' : ' ' }}"><a href="{{url('/messagerie')}}">Messagerie</a></li>
+             <li class="{{ Request::is('jeu/show') ? 'active' : ' ' }}"><a href="{{url('recherche')}}">Recherche</a></li>
+             <li><a href="#">Forum</a></li>
+             <li><a href="#">Messagerie</a></li>
               @if (Auth::check())<li><a href="#">Administration</a></li>@endif
              @if (Auth::guest())<div style="float:right"><li><a href="{{ url('/register') }}">S'enregistrer</a></li>@endif|
               @if (Auth::guest())<li><a id="connectButton" href="#">Se connecter</a></li></div>
