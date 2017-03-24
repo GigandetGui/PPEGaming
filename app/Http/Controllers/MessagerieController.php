@@ -13,7 +13,7 @@ class MessagerieController extends Controller
      */
     public function index()
     {
-      return view('views/messagerie/index');
+      return view('/messagerie/index');
     }
     /**
      * Show the form for creating a new resource.
