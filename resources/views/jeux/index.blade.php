@@ -1,7 +1,7 @@
 @extends('default')
 @section('content')
 <br/><br/><br/>
-<div>
+<div class="filtre">
 <div class="cadre">
 <h4>Rechercher un jeu</h4><br/>
 <div class="form-group">
@@ -16,6 +16,7 @@
 @endforeach
 <br/>
 <center><input class="btn btn-info" type="submit" value="Filtrer"></center>
+</div>
 </div>
 
 <div class="container">
@@ -36,5 +37,5 @@
 
 </div>
 </div>
-</div>
+
 @stop

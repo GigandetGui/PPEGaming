@@ -31,7 +31,6 @@ text-align: center;
 padding-left: 15px;
 margin-right: auto;
 margin-left:10px;
-float:left;
 border-radius: 5px;
 }
 
@@ -44,11 +43,11 @@ border-radius: 5px;
 	text-align: center;
 }
 
-/* jeux */
-
-.jeux{
-
+.filtre{
+  float:left;
 }
+
+/* jeux */
 
 .trait{
   border-top:1px solid #999;
@@ -57,16 +56,37 @@ border-radius: 5px;
 }
 
 .contenujeux{
-  background: #f5f5f5;
-  border-radius: 5px;
+  background: #E6E6E6;
+  border-radius: 10px;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
+  margin-bottom: 15px;
+  float:right;
+  width:80%;
 
 }
 
 .contenujeux p{
-  width:75%;
-  text-align: center;
+  width:65%;
+  float:right;
+}
+
+.utilisateurnom{
+  background: #E6E6E6;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  float:right;
+  width:80%;
+
+}
+
+.utilisateurnom p{
+  width:65%;
+  float:right;
 }

@@ -26,24 +26,26 @@
         
           <div class="slid banner1">
               <div class="caption">
-                <h3>NEWS 1</h3>
-                <p>news 1</p>
+                <h3>Counter Strike Global Offensive</h3>
+                <p>Sortie de la nouvelle map : Canal.
+                Ainsi que de la nouvelle caisse de skins</p>
               </div>
           </div>
         
         
            <div class="slid banner2"> 
               <div class="caption">
-                <h3>NEWS 2</h3>
-                <p>news 2</p>
+                <h3>League of Legends</h3>
+                <p>Arrivée de Camille</p>
               </div>
            </div>
         
         
           <div class="slid banner3">  
             <div class="caption">
-              <h3>NEWS 3</h3>
-              <p>news 3</p>
+              <h3>Overwatch</h3>
+              <p>Nouveau patch 1.10 : Orisa, changements sur les maps Kings Row et Eichenwalde.
+              Rework de Lucio et du système de contestation du point</p>
             </div>
           </div>
         
@@ -55,36 +57,36 @@
 <div class="content">
    <div class="container">
      <div class="top-games">
-       <h3>Top Games</h3>
+       <h3>Top Jeux</h3>
        <span></span>
      </div>
      <div class="top-game-grids">
        <ul id="flexiselDemo1">
          <li>
            <div class="game-grid">
-             <h4>Action Games</h4>
-             <p>Nulla elementum nunc tempus.</p>
+             <h4>Jeux d'actions</h4>
+             <p>GRAND THEFT AUTO V</p>
              <img src="images/t1.jpg" class="img-responsive" alt=""/>
            </div> 
          </li>
          <li>
            <div class="game-grid">
-             <h4>Racing Games</h4>
-             <p>Nulla elementum nunc tempus.</p>
+             <h4>Jeux de courses</h4>
+             <p>NEED FOR SPEED WORLD</p>
              <img src="images/t3.jpg" class="img-responsive" alt=""/>
            </div>
          </li>
          <li>
            <div class="game-grid">
-             <h4>3D Games</h4>
-             <p>Nulla elementum nunc tempus.</p>
+             <h4>Jeux 3D</h4>
+             <p>PIRANA 3D</p>
              <img src="images/t4.jpg" class="img-responsive" alt=""/>
            </div>
          </li>
          <li>
            <div class="game-grid">
-             <h4>Arcade Games</h4>
-             <p>Nulla elementum nunc tempus.</p>
+             <h4>Jeux Arcades</h4>
+             <p>SUBWAY SURFER</p>
              <img src="images/t2.jpg" class="img-responsive" alt=""/>
            </div> 
          </li>                  
@@ -124,7 +126,7 @@
 <div class="latest">
    <div class="container">
      <div class="latest-games">
-       <h3>Latest Games</h3>
+       <h3>Dernières sorties</h3>
        <span></span>
      </div>
      <div class="latest-top">       

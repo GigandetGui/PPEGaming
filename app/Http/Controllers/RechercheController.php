@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Utilisateur;
+use App\Jeu;
 
 class RechercheController extends Controller
 {
@@ -15,7 +16,8 @@ class RechercheController extends Controller
     public function index()
     {
         $lesUtilisateurs=Utilisateur::all();
-        return view('recherche/index')->with('lesUtilisateurs',$lesUtilisateurs);
+        $lesJeux=Jeu::all();
+        return view('recherche/index')->with('lesUtilisateurs',$lesUtilisateurs)->with('lesJeux',$lesJeux);
     }
 
     /**
@@ -82,5 +84,18 @@ class RechercheController extends Controller
     public function destroy($id)
     {
         //
+    }
+    
+    public function recherche(Request $request)
+    {
+        $lesUtilisateurs=Utilisateur::All();
+        $lesJeux=Jeu::all();
+        return view('recherche/index')->with('lesUtilisateurs',$lesUtilisateurs)->with('lesJeux',$lesJeux); 
+    }
+    
+        public function envoyerMessage(Request $request, $id)
+    {
+        $utilisateur = Utilisateur::find($id);// Je récupère l'objet correspondant à l'id de ma technologie 
+        return view('messagerie/utilisateur')->with('utilisateur',$utilisateur);   
     }
 }

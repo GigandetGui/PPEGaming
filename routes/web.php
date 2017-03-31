@@ -29,5 +29,7 @@ Route::resource('actualite', 'ActualiteController');
 Route::resource('user', 'UtilisateurController');
 Route::resource('recherche', 'RechercheController');
 Route::resource('messagerie','MessagerieController');
+Route::post('recherche/recherche','RechercheController@recherche')->name('recherche.recherche');
+Route::get('recherche/envoyerMessage/{id}','RechercheController@envoyerMessage')->name('recherche.envoyerMessage');
 
 Auth::routes();

@@ -32,12 +32,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div style="float:left"><li><a href="{{url('/')}}">The Multigaming Room</a></li></div>
              <li class="{{ Request::is('/') ? 'active' : ' ' }}"><a href="{{url('/')}}">Accueil</a></li>
              <li class="{{ Request::is('jeu/show') ? 'active' : ' ' }}"><a href="{{url('jeu/show')}}">Jeux</a></li>
-             <li><a href="#">Recherche</a></li>
+             <li class="{{ Request::is('recherche') ? 'active' : ' ' }}"><a href="{{url('recherche')}}">Recherche</a></li>
              <li><a href="#">Forum</a></li>
-             <li class="{{ Request::is('/') ? 'active' : ' ' }}"><a href="{{url('/messagerie')}}">Messagerie</a></li>
-             <li class="{{ Request::is('jeu/show') ? 'active' : ' ' }}"><a href="{{url('recherche')}}">Recherche</a></li>
-             <li><a href="#">Forum</a></li>
-             <li><a href="#">Messagerie</a></li>
+             <li class="{{ Request::is('messagerie') && ('messagerie/envoyerMessage/{id}') ? 'active' : ' ' }}"><a href="{{url('/messagerie')}}">Messagerie</a></li>
               @if (Auth::check())<li><a href="#">Administration</a></li>@endif
              @if (Auth::guest())<div style="float:right"><li><a href="{{ url('/register') }}">S'enregistrer</a></li>@endif|
               @if (Auth::guest())<li><a id="connectButton" href="#">Se connecter</a></li></div>
