@@ -89,7 +89,7 @@ class RechercheController extends Controller
     public function recherche(Request $request)
     {
         $lesUtilisateurs=Utilisateur::All();
-        $lesJeux=Jeu::all();
+        $lesJeux=Jeu::All();
         return view('recherche/index')->with('lesUtilisateurs',$lesUtilisateurs)->with('lesJeux',$lesJeux); 
     }
     

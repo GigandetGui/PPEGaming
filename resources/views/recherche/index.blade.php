@@ -2,30 +2,23 @@
 @section('content')
 <br/><br/><br/>
 <div class="filtre">
-    <div class="cadre">
-        <h4>Rechercher un joueur</h4><br/>
-        <div class="form-group">
-            <input id="recherche" type="search" class="form-control" placeholder="Recherche">
-            {{ Form::open(array('route' => 'recherche.recherche')) }}
-            </br>
-            <center><button type="submit" class="btn btn-info">Rechercher</button></center>
-            {{ Form::close() }}
-        </div>
-    </div>
 <div class="cadre">
     <h4>Choisir un jeu</h4><br/>
         @foreach($lesJeux as $jeu)
             <li><input type="checkbox">  {{ $jeu->nom }}</li>
         @endforeach
 <br/>
+{{ Form::open(array('route' => 'recherche.recherche')) }}
+
     <center><input class="btn btn-info" type="submit" value="Filtrer"></center>
+{{ Form::close() }}
 </div>
 </div>
 
 <div class="container">
 <div class="utilisateur">
                          <div class="table-responsive">
-                <table class="table table-hover">
+                <table class="table table-hover" id="table-jeu">
                     <thead>
                         <tr>
                             <th>Pseudo</th>
